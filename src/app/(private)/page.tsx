@@ -21,8 +21,7 @@ async function getDashboardData() {
     return [];
   }
 }
-
-export default async function Home() {
+async function Home() {
   const dashboardData = await getDashboardData();
   return (
     <div>
@@ -97,3 +96,5 @@ export default async function Home() {
     </div>
   );
 }
+
+export default Home;
